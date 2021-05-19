@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 
 const int MAX = 1e6+7;
-int64_t primes[MAX], cnt;
 
 int main() {
     using namespace std;
@@ -15,9 +14,10 @@ int main() {
 	            is_prime[j] = false;
 	    }
 	}
+	vector<int64_t>primes;
 	for(int i = 2; i <= MAX; ++i){
 	    if(is_prime[i]){
-	        primes[cnt++] = i;
+	        primes.push_back(i);
 	    }
 	}
 
